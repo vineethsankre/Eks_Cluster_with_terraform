@@ -10,7 +10,7 @@ terraform {
     bucket         = "mindcircuit-eks-bucket"
     key            = "terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "terraform-eks-state-locks"
+    dynamodb_table = "mc-eks-state-lock"
     encrypt        = true
   }
 }
