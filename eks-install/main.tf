@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "mindcircuit-eks-bucket"
+    bucket         = "mycluster-terraform-eks-state-s3-buckt"
     key            = "terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "mc-eks-state-lock"
+    dynamodb_table = "eks-state-lock"
     encrypt        = true
   }
 }
