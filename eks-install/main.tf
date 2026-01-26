@@ -10,7 +10,7 @@ terraform {
     bucket         = "todoapp-mcproject-s3-bucket"
     key            = "terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "eks-state-lock"
+    dynamodb_table = "todo-eks-state-lock"
     encrypt        = true
   }
 }
