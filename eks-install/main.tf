@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "mycluster-terraform-eks-state-s3-buckt"
+    bucket         = "todoapp-mcproject-s3-bucket"
     key            = "terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "eks-state-lock"
